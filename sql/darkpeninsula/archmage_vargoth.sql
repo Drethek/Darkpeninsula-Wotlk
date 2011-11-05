@@ -1,0 +1,5 @@
+-- Fix Achievement: Higher learning (DB side)
+UPDATE gameobject_template SET data5=1 WHERE `entry` IN (192708,192706,192871,192905,192710,192886,192869,192880,192895,192713,192889,192890,192894,192884,192866,192891,192872,192881,192709,192883,192651,192888,192711,192653,192887,192652,192865,192874,192868,192870,192885,192867,192882,192707,192896);
+
+-- Fix Archmage Vargoth support to "Higher Learning" Achievement (core side)
+UPDATE creature_template set scriptname="npc_archmage_vargoth" WHERE entry=19481;
